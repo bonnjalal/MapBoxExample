@@ -18,7 +18,7 @@ class MainViewModel(private val repository: PolygonRepository) : ViewModel() {
      */
     fun insert(polygonModel: PolygonModel) = viewModelScope.launch {
         repository.insert(polygonModel)
-        selectSpinnerPosition(-1)
+        //selectSpinnerPosition(-1)
     }
 
     /**

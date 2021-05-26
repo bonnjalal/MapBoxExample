@@ -2,6 +2,7 @@ package com.bonnjalal.sowitmapboxtest.ui.fragments
 
 
 import android.annotation.SuppressLint
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 
@@ -25,6 +26,8 @@ class PolygonDialog: DialogFragment() {
 
     private val viewModel: MainViewModel by activityViewModels()
 
+    var position = 0
+
     @SuppressLint("SetTextI18n")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         dialog!!.getWindow()?.setBackgroundDrawableResource(R.drawable.back_spinner)
@@ -46,14 +49,22 @@ class PolygonDialog: DialogFragment() {
                 val polygonName = binding.etPlygonName.text.toString()
                 val polygonLocation = binding.etPolygonLocation.text.toString()
                 val polygonModel = PolygonModel(polygonName, polygonLocation, polygonArea, PointList(mapPointList))
+
                 viewModel.insert(polygonModel)
-                ///viewModel.selectSpinnerPosition(-1)
+                position = -1
+
                 dialog!!.dismiss()
             })
+
+
         })
         return view
     }
 
+    override fun onDismiss(dialog: DialogInterface) {
+        super.onDismiss(dialog)
+        viewModel.selectSpinnerPosition(position)
+    }
     override fun onStart() {
         super.onStart()
 

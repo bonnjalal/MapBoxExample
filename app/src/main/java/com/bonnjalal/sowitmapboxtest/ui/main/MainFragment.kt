@@ -162,7 +162,9 @@ class MainFragment : Fragment(), OnMapReadyCallback {
                         if (position < polygons.size){
                             if (position == -1){
                                 viewModel.delete(polygons[polygons.size - 1])
-                            }else{
+                            }else if(position == 0){
+                                clearEntireMap()
+                            } else{
                                 viewModel.delete(polygons[position])
                             }
                         }
