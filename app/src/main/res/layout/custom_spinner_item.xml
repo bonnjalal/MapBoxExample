@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+
+    android:layout_marginBottom="8dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/polygon_name"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/polygonName"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/polygon_location"
+        android:textSize="14sp"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/polygonLocation"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/polygon_area"
+        android:textSize="14sp"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/polygonArea"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        />
+</LinearLayout>

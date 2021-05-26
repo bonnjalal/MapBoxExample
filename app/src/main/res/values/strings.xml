@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sowit MapBox Test</string>
+    <string name="clear_map" >Clear map</string>
+    <string name="delete_selection">Delete polygon</string>
+    <string name="polygon_name">Name:</string>
+    <string name="polygon_location">Location:</string>
+    <string name="polygon_area">Area:</string>
+    <string name="polygon_detail">Polygon detail</string>
+    <string name="enter_polygon_name">Enter polygon name</string>
+    <string name="save_polygon">Save Polygon</string>
+    <string name="retrieving_location">Retrieving location, please wait…</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoiYm9ubmphbGFsIiwiYSI6ImNrb3oweHdzajAwbHUycG82cDd6N2szaDkifQ.Es5nTb0WNYrUQ4iQdtKT1g</string>
+</resources>
